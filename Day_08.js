@@ -63,10 +63,10 @@ const reverseString = (s) => {
  */
 const rem = (str) => {
     let arr = str.split('')
-    for(let i=0; i<arr.length; i++){
-        for(let j=i+1; j<arr.length; j++){
-            if(arr[i] == arr[j]){
-                arr.splice(j,1)
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] == arr[j]) {
+                arr.splice(j, 1)
             }
         }
     }
@@ -87,20 +87,20 @@ const rem = (str) => {
  */
 
 
-const rotateString = (S1,S2) => {
+const rotateString = (S1, S2) => {
     let arr = S1.split('')
     let flag = false;
-    for(let i=0; i<arr.length; i++ ) {
+    for (let i = 0; i < arr.length; i++) {
         let temp = arr.pop()
         arr.unshift(temp)
-        if(arr.join('') == S2){
+        if (arr.join('') == S2) {
             flag = true
             break;
         }
     }
-    if(flag == true){
+    if (flag == true) {
         return "Yes"
-    } else{
+    } else {
         return "No"
     }
 }
