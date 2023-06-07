@@ -9,20 +9,35 @@ Output: Yes
 Explanation: Normal order reading of elements: 3 6 0 6 3
 Reverse order reading of elements: 3 6 0 6 3, as both the orders are same, the array is Palindromic, hence the output "Yes".
  */
-const checkP = (a, arr) => {
-    let str = ''
-    let strR = ''
-    for (let i = 0; i < a; i++) {
-        str += arr[i]
-    }
-    for (let i = a-1; i >= 0; i--) {
-        strR += arr[i]
-    }
-    if (str === strR) {
-        return "Yes"
-    } else {
-        return "No"
-    }
-}
+// const checkP = (a, arr) => {
+//     let str = ''
+//     let strR = ''
+//     for (let i = 0; i < a; i++) {
+//         str += arr[i]
+//     }
+//     for (let i = a-1; i >= 0; i--) {
+//         strR += arr[i]
+//     }
+//     if (str === strR) {
+//         return "Yes"
+//     } else {
+//         return "No"
+//     }
+// }
 
-console.log(checkP(5, [3, 6, 0, 6, 3]))
+// const isPalindromicNumber = (arr) => {
+//     let newArr = []
+//     for(let i=arr.length-1; i>=0; i--) {
+//         newArr.push(arr[i])
+//     }
+//     if(arr.join('') === newArr.join('')) {
+//         return "Yes"
+//     } else {
+//         return "No"
+//     }
+// } 
+
+// console.log(isPalindromicNumber([3,6,0,6,3]));
+
+
+// console.log(checkP(5, [3, 6, 0, 6, 3]))
