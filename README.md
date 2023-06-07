@@ -1,2 +1,2 @@
 # Problem-Solving-JavaScript-CodeZinger
-Solution of CodeZinger Questions
+Solutions of CodeZinger Questions
